@@ -93,7 +93,6 @@ void solve() {
         dp[1][i] = ((dp[0][i - 1] % MOD + dp[2][i - 1] % MOD) % MOD + dp[3][i - 1] % MOD) % MOD;
         dp[2][i] = ((dp[0][i - 1] % MOD + dp[1][i - 1] % MOD) % MOD + dp[3][i - 1] % MOD) % MOD;
         dp[3][i] = ((dp[0][i - 1] % MOD + dp[1][i - 1] % MOD) % MOD + dp[2][i - 1] % MOD) % MOD;
-        debug(dp)
     }
     cout << dp[3][n - 1] << endl;
 }
